@@ -379,6 +379,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 
 class ViewTestCase(StaticLiveServerTestCase):
+
     def setUp(self):
         #Load base test functionality for decide
         self.base = BaseTestCase()
