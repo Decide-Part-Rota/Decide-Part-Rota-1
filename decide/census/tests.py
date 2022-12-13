@@ -204,7 +204,6 @@ class CensusAddRemove(BaseTestCase):
         self.assertEqual(existing_censuss, Census.objects.count())
 
     def test_add_user(self):
-        request = {'user': self.voter}
 
         self.user = User(username= 'user_prueba')
         self.user.save()
