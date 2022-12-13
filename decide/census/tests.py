@@ -539,6 +539,7 @@ class ViewTestCase(StaticLiveServerTestCase):
 
     def generate_import_csv(self):
         #Creates a csv file with a row containing the user admin
+        
         try:
             user_admin = User.objects.get(username="admin")
             self.file = open('./census/export/import_test.csv', 'w', encoding='UTF8')
