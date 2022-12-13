@@ -631,7 +631,7 @@ class ViewTestCase(StaticLiveServerTestCase):
         self.driver.find_element(By.ID, "id_password").send_keys("qwerty", Keys.ENTER)
         self.driver.get(f'{self.live_server_url}/voting/listadoVotaciones')
         self.driver.find_element(By.LINK_TEXT, "Join census").click()
-        self.assertTrue(len(self.driver.find_elements(By.LINK_TEXT, "Go Vote"))==2)     #2 porque ya había uno más el que acabamos de añadir
+        self.assertTrue(len(self.driver.find_elements(By.LINK_TEXT, "Go Vote"))==2)#2 porque ya había uno más el que acabamos de añadir
 
     #Va al listado y comprueba que hay una votacion en la que participa
     def test_listado_votacion_participa(self):
@@ -652,7 +652,7 @@ class ViewTestCase(StaticLiveServerTestCase):
         self.driver.find_element(By.ID, "id_password").send_keys("qwerty", Keys.ENTER)
         self.driver.get(f'{self.live_server_url}/voting/listadoVotaciones')
         self.driver.find_element(By.LINK_TEXT, "Quit Census").click()
-        self.assertTrue(len(self.driver.find_elements(By.LINK_TEXT, "Join census"))==2)     #2 porque ya había uno más el que acabamos de añadir
+        self.assertTrue(len(self.driver.find_elements(By.LINK_TEXT, "Join census"))==2)#2 porque ya había uno más el que acabamos de añadir
 
 
 
