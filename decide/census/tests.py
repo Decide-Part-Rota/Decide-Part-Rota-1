@@ -325,7 +325,6 @@ class CensusExportImport(BaseTestCase):
         self.assertTrue(os.path.exists('./census/export/export_' + self.v.name + '.csv'))
         with open('./census/export/export_' + self.v.name + '.csv', 'r') as csvfile:
             self.assertEqual(2, len(csvfile.readlines()))
-
              
     def generate_import_csv(self):
         #Creates a csv file with a row containing the user admin
