@@ -217,6 +217,7 @@ class CensusAddRemove(BaseTestCase):
         opt3 = QuestionOption(question=q1, option='option 3')
         opt4 = QuestionOption(question=q1, option='option 4')
         opt5 = QuestionOption(question=q1, option='option 5')
+        
         opt.save()
         opt2.save()
         opt3.save()
